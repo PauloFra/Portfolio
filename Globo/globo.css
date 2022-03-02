@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 body{
     margin: 0 auto;
@@ -46,7 +47,7 @@ header{
     text-align: center;
     padding: 10px;
 }
-button , header a{
+header button , header a{
     text-decoration: none;
     border:none;
     background: transparent;
@@ -84,4 +85,143 @@ header i{
 
 #color10{
     color: rgb(73, 73, 248);
+}
+/* Conteudo */
+main{
+    max-width: 1200px;
+    margin: 160px auto;
+    display: flex;
+}
+main img{
+    max-width: 100%;
+    border-radius: 12px;
+}
+.first-column{
+    width: 624px;
+    border-right: 1px solid rgb(195, 190, 190);
+    padding-right: 30px; 
+}
+.big-content{
+    padding-bottom: 20px;
+}
+.first-grid{
+    border-top: 1px solid rgb(195, 190, 190);
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+}
+.first-grid-content p{
+    color: #c4170c;
+    font-weight: bold;
+}
+
+h4{
+    color:#2f3134;
+    font-weight: bold;
+    font-size: 20px;
+    width: 100%;
+    margin-top: 4px;
+}
+/* segunda section */
+.second-column-content{
+    display: inline;
+    
+ }
+ .second-column-content div{
+    margin-bottom: 40px;
+    width: 240px;
+  }
+  .second-column-content p{
+    color: green;
+    font-weight: bold;
+  }
+ 
+.second-column{
+    padding: 0 30px 30px 30px;
+    width: 240px;
+    border-right: 1px solid rgb(195, 190, 190);
+}
+.second-column-content img{
+    width: 240px;
+    height: 128px;
+    
+}
+p , li, ul{
+    color: #2f3134;
+    font-size: 17px;
+}
+ul{
+    padding-left: 16px;
+}
+/* terceira coluna */
+.third-column{
+    width: 240px;
+    justify-content: center;
+}
+.third-column{
+    margin-left: 23px;
+    justify-content: center;
+}
+.third-column div{
+    margin-bottom: 100px;
+}
+.third-column button{
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+    border-radius: 9px;
+    height: 34px;
+    text-align: center;
+    border: none;
+    width: 100%;
+    transition: 2s;
+    margin: 5px;
+}
+.third-column div > a{
+    font-size: 20px;
+}
+.third-column a{
+    text-decoration: none;
+    border:none;
+    background: transparent;
+    font-size: 17px;
+    padding: 14px;
+    color: black;
+}
+.third-column p{
+    font-weight: bold;
+    color: orangered;
+}
+footer{
+    background-color: #0031ff;
+    color: white;
+    align-items: center;
+    justify-content: center; 
+    height: 300px;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 9px;
+    font-size: 15px;
+}
+footer div > a{
+    font-size: 30px;
+}
+footer li{
+    display: inline;
+}
+footer div{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    
+}
+address{
+    margin:50px 0 0 356px;
+    font-size: 13px;
+    font-weight: bold;
+   
 }

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Feed Page</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="img/logos/linkedin-logo.png" alt="linkedin logo"></a>
+        </div>
+        <div class="icons-menu">
+            <div class="icons-content">
+                <a href="feed.html">
+                    <i class="fa-solid fa-wifi"></i>
+                    <p>FEED</p>
+                </a>
+            </div>
+            <div class="icons-content">
+                <i class="fa-solid fa-user-group"></i>
+                <p>NETWORK</p>
+            </div>
+            <div class="icons-content">
+                <i class="fa-solid fa-briefcase"></i>
+                <p>JOBS</p>
+            </div>
+            <div class="icons-content notification">
+                <i class="fa-regular fa-message"></i>
+                <p>CHAT</p>
+            </div>
+            <div class="icons-content">
+                <i class="fa-regular fa-bell"></i>
+                <p>NOTICES</p>
+            </div>
+        </div>
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="" placeholder="Search">
+        </div>
+        <div class="contact">
+            <img src="img/user-photos/profile-mini.png" alt="user photo">
+            <div class="text-contact">
+                <p id="nick">D. KARGAEV <span>YOU</span></p>
+                <p>367 views today <span id="growth">+32<i class="fa-solid fa-arrow-up"></i></span></p>
+            </div>
+        </div>
+        <div class="hamburger">
+            <i class="fa-solid fa-ellipsis"></i>
+            <p>OTHER</p>
+        </div>
+    </header>
+    <main>
+        <section class="first-column">
+            <div class="container-feed container-default">
+                <div class="new-post">
+                    <div class="title-post">
+                        <h5>NEW POST</h5>
+                    </div>
+                    <div class="frame-post">
+                        <div class="input-post">
+                            <input class="input" placeholder="What's on your mind?"></input>
+                        </div>
+                        <div class="btn-post">
+                            <div><img src="./img/post-icons/attach.png" alt=""></div>
+                            <div><img src="./img/post-icons/photo.png" alt=""></div>
+                            <div><img src="./img/post-icons/film.png" alt=""></div>
+                            <div><img id="send" src="./img/post-icons/send.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-sort-line">
+                <div>
+                    <hr>
+                </div>
+                <div>
+                    <p>sort by: <select name="sort" id="sort-select">
+                            <option value="trending">trending</option>
+                            <option value="latest">latest first</option>
+                            <option value="oldest">oldest first</option>
+                        </select></p>
+                </div>
+                <div>
+                    <hr>
+                </div>
+            </div>
+            <div class="container-feed container-default">
+                <div class="post-header">
+                    <small><a href="#">Ted Bell</a>, <a href="#">Annette Nguyen</a> and <a href="#">Cody Hawkins</a>
+                        liked this</small>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+                <div class="post-box">
+                    <div class="post-profile">
+                        <div class="profile-row">
+                            <div class="profile-photo"><img src="img/user-photos/photo-theresa.png" alt="user photo">
+                            </div>
+                            <div class="profile-text">
+                                <p>Theresa Steward</p>
+                                <small>iOS developer</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-content fade-out">
+                        <p> What did the Dursleys care if Harry lost his place on the House Quidditch team because he
+                            hadn't practiced all summer? What was it to the Dursleys if Harry went back to school
+                            without any of his homework done? The Dursleys were what wizards called Muggles (not a drop
+                            of magical blood in their veins). </p>
+                    </div>
+                    <div class="post-content">
+                        <a href>Read More</a>
+                    </div>
+                </div>
+                <div class="post-footer">
+                    <div class="post-actions">
+                        <i class="fa-regular fa-thumbs-up"><span>42</span></i>
+                        <i class="fa-regular fa-comment"><span>9</span></i>
+                    </div>
+                    <div class="post-actions">
+                        <i class="fa-solid fa-share-nodes"><span> Share</span></i>
+                    </div>
+                </div>
+            </div>
+            <div class="container-feed container-default">
+                <div class="post-header">
+                    <small><a href="#">Audrey Alexander</a> comment this</small>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+                <div class="post-box">
+                    <div class="post-profile">
+                        <div class="post-profile">
+                            <div class="profile-row">
+                                <div class="profile-photo"><img src="img/user-photos/photo-kyle.png" alt="user photo">
+                                </div>
+                                <div class="profile-text">
+                                    <p>Kyle Fisher</p>
+                                    <small>Product designer at Commandor Corp.</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>How's your day going, guys?</p>
+                        <img src="img/misc/photo-feed.png" alt="photo">
+                    </div>
+                </div>
+                <div class="post-footer">
+                    <div class="post-actions">
+                        <i class="fa-solid fa-thumbs-up"><span>12</span></i>
+                        <i class="fa-regular fa-comment"><span>3</span></i>
+                    </div>
+                    <div class="post-actions">
+                        <i class="fa-solid fa-share-nodes"><span> Share</span></i>
+                    </div>
+                </div>
+            </div>
+            <div class="container-feed container-default">
+                <div class="post-header">
+                    <small>High rated post from your feed</small>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+                <div class="post-box">
+                    <div class="post-profile">
+                        <div class="post-profile">
+                            <div class="profile-row">
+                                <div class="profile-photo"><img src="img/user-photos/photo-brandon.png"
+                                        alt="user photo"></div>
+                                <div class="profile-text">
+                                    <p>Brandon Wilson</p>
+                                    <small>Senior UX designer</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>There is some new guidelines for iOS</p>
+                        <div class="cloud-file">
+                            <div class="info-file">
+                                <img src="img/cloud-icons/file.png" alt="blue circle with a file">
+                                <div>
+                                    <p>iOS 11 guidelines for UX/UI designers</p>
+                                    <small>PDF file, 324 kb</small>
+                                </div>
+                            </div>
+                            <div class="down-file">
+                                <img src="img/cloud-icons/download.png" alt="cloud with an arrow">
+                            </div>
+                        </div>
+                        <div class="cloud-file">
+                            <div class="info-file">
+                                <img src="img/cloud-icons/file.png" alt="blue circle with a file">
+                                <div>
+                                    <p>iOS 11 guidelines for developers</p>
+                                    <small>PDF file, 245 kb</small>
+                                </div>
+                            </div>
+                            <div class="down-file">
+                                <img src="img/cloud-icons/download.png" alt="cloud with an arrow">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-footer">
+                    <div class="post-actions">
+                        <i class="fa-solid fa-thumbs-up"><span>89</span></i>
+                        <i class="fa-solid fa-comment"><span>7</span></i>
+                    </div>
+                    <div class="post-actions">
+                        <i class="fa-solid fa-share-nodes"><span> Share</span></i>
+                    </div>
+                </div>
+            </div>
+            <div class="container-feed container-default">
+                <div class="post-header">
+                    <small>First post from <a href="#">Audrey Alexander</a></small>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+                <div class="post-box">
+                    <div class="post-profile">
+                        <div class="post-profile">
+                            <div class="profile-row">
+                                <div class="profile-photo"><img src="img/user-photos/photo-audrey.png" alt="user photo">
+                                </div>
+                                <div class="profile-text">
+                                    <p>Audrey Alexander</p>
+                                    <small>Team lead at Google</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>The bun runs along the road and meets a wolf. «Little bun, little bun, I want to eat you!»
+                            says the wolf. «I ran away from Grandfather, I ran away from Grandmother, I ran away from
+                            the hare. And I can run away from you, grey wolf!» says the bun and runs away.</p>
+                    </div>
+                </div>
+                <div class="post-footer">
+                    <div class="post-actions">
+                        <i class="fa-regular fa-thumbs-up"><span>10</span></i>
+                        <i class="fa-regular fa-comment"><span>0</span></i>
+                    </div>
+                    <div class="post-actions">
+                        <i class="fa-solid fa-share-nodes"><span> Share</span></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="second-column">
+            <div class="content-aside">
+                <div class="bg-profile-lateral">
+                    <img src="img/user-photos/user-background.png" alt="">
+                </div>
+                <div class="info-profile-lateral">
+                    <div class="photo-lateral">
+                        <img src="img/user-photos/profile-photo.png" alt="user photo">
+                    </div>
+                    <div class="bio-lateral">
+                        <h5>Dmitry Kargaev <i class="fa-brands fa-linkedin"></i></h5>
+                        <p>Freelance UX/UI designer, 80+ projects in web design, mobile apps (iOS & android) and
+                            creative
+                            projects. Open to offers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content-aside">
+                <button class="btn-blue">WRITE NEW ARTICLE</button>
+            </div>
+            <div class="content-aside">
+                <div class="header-aside">
+                    <h5>MY GROUPS</h5>
+                    <a href="#">EDIT LIST</a>
+                </div>
+                <div class="groups-aside">
+                    <div class="groups-row">
+                        <div class="groups-photo"><img src="img/logos/moscow-logo.png"></div>
+                        <div class="groups-text">
+                            <h4>Moscow State
+                                Linguistical
+                                University</h4>
+                        </div>
+                    </div>
+                    <div class="groups-row">
+                        <div class="groups-photo"><img src="img/logos/digital-free-logo.png"></div>
+                        <div class="groups-text">
+                            <h4>Digital freelancers
+                                group</h4>
+                        </div>
+                    </div>
+                    <div class="groups-row">
+                        <div class="groups-photo"><img src="img/logos/group-brando-logo.png"></div>
+                        <div class="groups-text ">
+                            <h4>Brandon Wilson</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-aside">
+                    <a href="#">SHOW ALL</a>
+                </div>
+            </div>
+            <div class="content-aside">
+                <div class="header-aside">
+                    <h5>FOLOWED HASHTAGS</h5>
+                </div>
+                <div class="hashs">
+                    <a href="#">#work</a>
+                    <a href="#">#business</a>
+                    <a href="#">#hr</a>
+                    <a href="#">#userinterface</a>
+                    <a href="#">#digital</a>
+                    <a href="#">#userexperience</a>
+                    <a href="#">#ux</a>
+                    <a href="#">#ui</a>
+                    <a href="#">#freelance</a>
+                </div>
+            </div>
+            <div class="content-aside">
+                <div class="header-aside">
+                    <h5>TRENDING ARTICLES</h5>
+                </div>
+                <div class="trending-aside aside-card">
+                    <div class="recomm-row">
+                        <div class="recomm-photo"><img src="img/trending-photos/trending1.png" alt="photo"></div>
+                        <div class="recomm-text">
+                            <h5>How I make
+                                cool designs?</h5>
+                            <small>6,340 viewers</small>
+                        </div>
+                    </div>
+                    <div class="recomm-row">
+                        <div class="recomm-photo"><img src="img/trending-photos/trending2.png" alt="photo"></div>
+                        <div class="recomm-text">
+                            <h5>Advices for
+                                young HR</h5>
+                            <small>8,123 viewers</small>
+                        </div>
+                    </div>
+                    <div class="recomm-row">
+                        <div class="recomm-photo"><img src="img/trending-photos/trending3.png" alt="photo"></div>
+                        <div class="recomm-text">
+                            <h5>A little about
+                                usability testing</h5>
+                            <small>3,912 viewers</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-logo">
+            <div class="linkedin-logo"><img src="img/logos/linkedin-logo.png" alt="linkedin logo"></div>
+            <div class="linkedin-name">
+                <div class="linkedin-name">
+                    <p>Linked<span>in</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-navigation">
+            <div>
+                <h4>Navigation</h4>
+            </div>
+            <div class="footer-nav-menu">
+                <a href="#">About</a>
+                <a href="#">Talent Solutions</a>
+                <a href="#">Community Guidelines</a>
+                <a href="#">Careers</a>
+                <a href="#">Marketing Solutions </a>
+                <a href="#">Privacy & Terms</a>
+                <a href="#">Advertising</a>
+                <a href="#">Sales Solutions</a>
+                <a href="#">Mobile App</a>
+                <a href="#">Small Business</a>
+                <a href="#">Safety Center</a>
+            </div>
+        </div>
+        <div class="footer-fast">
+            <div>
+                <h4>Fast access</h4>
+            </div>
+            <div class="footer-buttons">
+                <button class="footer-btn-blue"><span>Questions?</span> <i
+                        class="fa-regular fa-circle-question"></i></button>
+                <button class="footer-btn-white"><span>Settings</span> <i class="fa-solid fa-gear"></i></button>
+            </div>
+        </div>
+        <div class="footer-language">
+            <div>
+                <h4>Language</h4>
+            </div>
+            <div>
+                <select class="language-selector">
+                    <option value="English">English</option>
+                    <option value="Português">Português</option>
+                </select>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
